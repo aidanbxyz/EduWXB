@@ -1,1 +1,7 @@
-00,Main Payload,[[2,1,'V','Battery Voltage'], []]
+#TODO: EVERYTHING
+00,Main,[[2,0,0,'','Packet Number'],[2,1,0,'V','Battery Voltage'],[2,1,-60,'C','Internal Temperature'],[3,1,-60,'C','External Temperature'],[3,1,0,'%','Relative Humidity'],[4,1,0,'hPa','Pressure']]
+01,Air Quality,[[,,,'PPM','CO2 Concentration'],[,,,'','PM1.0'],[,,,'','PM2.5'],[,,,'','PM10']]
+02,Radiation,[[,,,'CPM','Geiger Counter']]
+03,Spectrometer,[[,,,'','Near-IR'],[,,,'','UV']]
+04,Speed of Sound,[[,,+250,'m/s','Speed of Sound']]
+05,VLF Radio,[[1,0,0,'','VLF Radio Status']]

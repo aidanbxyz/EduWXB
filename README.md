@@ -13,18 +13,18 @@ The purpose of Payloads.txt is so that you do not have to update the ground stat
 Each line in Payloads.txt is formatted like:
 
 ```
-ID,Name,[[Number of Hex Digits,Number of 10 Multipliers,'Units','Description']...]
+ID,Name,[[Number of Hex Digits,Number of 10 Multipliers,Offset,'Units','Description']...]
 ```
 
-Each payload has a unique ID. It can be one or two digits, but not three digits currently. The Name is the name of the payload kit, not the data that it transmits. Name is not in quotes. Next comes an array of the transmitted data. The array contains a smaller array for each data type transmitted that includes the number of hex digits it uses, the 10^x multiplier, the units, and a short description.
+Each payload has a unique ID. It can be one or two digits, but not three digits currently. The Name is the name of the payload kit, not the data that it transmits. Name is not in quotes. Next comes an array of the transmitted data. The array contains a smaller array for each data type transmitted that includes the number of hex digits it uses, the 10^x multiplier, an offset, the units, and a short description.
 
 For example:
 
 ```
-99,Example Payload,[[1,0,'DpM','Ducks Detected'],[2,1,'QpH','Duck Noises']]
+99,Example Payload,[[1,0,0,'DpM','Ducks Detected'],[2,1,0,'QpH','Duck Noises']]
 ```
 
-The ID is 99 and the payload kit is called "Example Payload". It measures two fields. The first field uses only one hex digit and the second uses two hex digits. The first field has a 10^x multiplier of 0 and the second has 1. The units are 'DpM' and 'QpH' and the field descriptions are 'Ducks Detected' and 'Duck Noises'.
+The ID is 99 and the payload kit is called "Example Payload". It measures two fields. The first field uses only one hex digit and the second uses two hex digits. The first field has a 10^x multiplier of 0 and the second has 1. There is no offset. The units are 'DpM' and 'QpH' and the field descriptions are 'Ducks Detected' and 'Duck Noises'.
 
 An example transmission for this payload would be `99a35`. It would be decoded as:
 
