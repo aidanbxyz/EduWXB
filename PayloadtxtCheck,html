@@ -1,0 +1,7 @@
+<script>
+    function runCheck() {
+        ptxt = document.getElementById("ptxt").value;
+    }
+</script>
+<textarea id="ptxt" onchange="runCheck()"></textarea>
+not done
