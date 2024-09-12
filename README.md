@@ -16,20 +16,16 @@ Each line in Payloads.txt is formatted like:
 ID,Name,[[Number of Hex Digits,Number of 10 Multipliers,Offset,'Units','Description']...]
 ```
 
-Each payload has a unique ID. It can be one or two digits, but not three digits currently. The Name is the name of the payload kit, not the data that it transmits. Name is not in quotes. Next comes an array of the transmitted data. The array contains a smaller array for each data type transmitted that includes the number of hex digits it uses, the 10^x multiplier, an offset, the units, and a short description.
+Each payload has a unique ID. It should be two digits (00-99). The Name is the name of the payload kit, not the data that it transmits. Name is not in quotes. Next comes an array of the transmitted data. The array contains an array for each data type transmitted that includes the number of hex digits it uses, the 10^x multiplier, an offset, the units, and a short description.
 
 For example:
 
 ```
-99,Example Payload,[[1,0,0,'DpM','Ducks Detected'],[2,1,0,'QpH','Duck Noises']]
+02,Radiation,[[3,0,0,'CPM','Geiger Counter']]
 ```
 
-The ID is 99 and the payload kit is called "Example Payload". It measures two fields. The first field uses only one hex digit and the second uses two hex digits. The first field has a 10^x multiplier of 0 and the second has 1. There is no offset. The units are 'DpM' and 'QpH' and the field descriptions are 'Ducks Detected' and 'Duck Noises'.
+The ID is 02 and the payload kit is called "Radiation". It measures one field that uses three hex digits, no 10^x multiplier and no offset.
 
-An example transmission for this payload would be `99a35`. It would be decoded as:
+An example transmission for this payload would look like `022c8`.
 
-```
-99 - Payload ID -> Example Payload
-a  - First Field -> Ducks Detected = 10 DpM
-35 - Second Field -> Duck Noises = 530 QpH
-```
+We have a website where you can play around with the format and check the formatting on custom payloads. This is located at [sswa.tv/projects/eduwxb.html](https://sswa.tv/projects/eduwxb.html). You can load example data or the current version of Payload.txt from this repo.
