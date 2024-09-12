@@ -16,7 +16,7 @@ Each line in Payloads.txt is formatted like:
 ID,Name,[[Number of Hex Digits,Number of 10 Multipliers,Offset,'Units','Description']...]
 ```
 
-Each payload has a unique ID. It should be two digits (00-99). The Name is the name of the payload kit, not the data that it transmits. Name is not in quotes. Next comes an array of the transmitted data. The array contains an array for each data type transmitted that includes the number of hex digits it uses, the 10^x multiplier, an offset, the units, and a short description.
+Each payload has a unique ID. It should be two digits (00-99), 00 and 99 are reserved for the Main Payload and Error Reporter, respectively. The Name is the name of the payload kit, not the data that it transmits. Name is not in quotes. Next comes an array of the transmitted data. The array contains an array for each data type transmitted that includes the number of hex digits it uses, the 10^x multiplier, an offset, the units, and a short description.
 
 For example:
 
