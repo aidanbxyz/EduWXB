@@ -4,3 +4,4 @@
 03,Spectrometer,[[3,1,0,'','Near-IR'],[2,0,0,'','UV']]
 04,Speed of Sound,[[3,-1,100,'m/s','Speed of Sound']]
 05,VLF Radio,[[1,0,0,'','VLF Radio Status']]
+99,Error Reporter,[[1,0,0,'','Level'],[4,0,0,'','Line']]
