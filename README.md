@@ -34,3 +34,10 @@ An example transmission for this payload would look like `022c8`.
 ```
 
 We have a website where you can play around with the format and check the formatting on custom payloads. This is located at [sswa.tv/projects/eduwxb.html](https://sswa.tv/projects/eduwxb.html). You can load example data or the current version of Payload.txt from this repo.
+
+The Error Reporter operates on reserved payload 99. Data looks like `990015e`.
+
+```
+[99]0015e - ID
+99[0]015e - Level (0) NOT DONE
+```
