@@ -1,0 +1,6 @@
+00,Main,[[2,0,0,'','Packet Number'],[2,-1,0,'V','Battery Voltage'],[2,0,-100,'C','Internal Temperature'],[3,-1,-100,'C','External Temperature'],[3,-1,0,'%','Relative Humidity'],[4,-1,0,'hPa','Pressure']]
+01,Air Quality,[[3,0,0,'PPM','CO2 Concentration'],[3,0,0,'Env Units','PM1.0'],[3,0,0,'Env Units','PM2.5'],[3,0,0,'Env Units','PM10']]
+02,Radiation,[[3,0,0,'CPM','Geiger Counter']]
+03,Spectrometer,[[3,1,0,'','Near-IR'],[2,0,0,'','UV']]
+04,Speed of Sound,[[23,-1,100,'m/s','Speed of Sound']]
+05,VLF Radio,[[1,0,0,'','VLF Radio Status']]
