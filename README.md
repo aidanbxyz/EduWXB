@@ -28,4 +28,9 @@ The ID is 02 and the payload kit is called "Radiation". It measures one field th
 
 An example transmission for this payload would look like `022c8`.
 
+```
+[02]2c8 - Payload ID -> "Radiation" measureing "Geiger Counter" as "CPM"
+02[2c8] - 0x2c8 -> 712 -> 712 CPM
+```
+
 We have a website where you can play around with the format and check the formatting on custom payloads. This is located at [sswa.tv/projects/eduwxb.html](https://sswa.tv/projects/eduwxb.html). You can load example data or the current version of Payload.txt from this repo.
