@@ -33,11 +33,36 @@ An example transmission for this payload would look like `022c8`.
 02[2c8] - 0x2c8 -> 712 -> 712 CPM
 ```
 
-We have a website where you can play around with the format and check the formatting on custom payloads. This is located at [sswa.tv/projects/eduwxb.html](https://sswa.tv/projects/eduwxb.html). You can load example data or the current version of Payload.txt from this repo.
+We have a website where you can play around with the format and check the formatting on custom payloads, located at [sswa.tv/projects/eduwxb.html](https://sswa.tv/projects/eduwxb.html). You can load example data or the current version of Payload.txt from this repo.
 
-The Error Reporter operates on reserved payload 99. Data looks like `990015e`.
+The Error Reporter operates on reserved payload 99. Data looks like `990015e`. The error reporter is only active if debugging is enabled on the flight computer.
 
 ```
 [99]0015e - ID
-99[0]015e - Level (0) NOT DONE
+99[0]015e - Error Level
+990[015e] - Line Number
+ ____________________________________
+| 0 = Information (Payloads 00 - 19) |
+| 1 = Warning     (Payloads 00 - 19) |
+| 2 = Error       (Payloads 00 - 19) |
+|                                    |
+| 3 = Information (Payloads 20 - 39) |
+| 4 = Warning     (Payloads 20 - 39) |
+| 5 = Error       (Payloads 20 - 39) |
+|                                    |
+| 6 = Information (Payloads 40 - 59) |
+| 7 = Warning     (Payloads 40 - 59) |
+| 8 = Error       (Payloads 40 - 59) |
+|                                    |
+| 9 = Information (Payloads 60 - 79) |
+| a = Warning     (Payloads 60 - 79) |
+| b = Error       (Payloads 60 - 79) |
+|                                    |
+| c = Information (Payloads 80 - 98) |
+| d = Warning     (Payloads 80 - 98) |
+| e = Error       (Payloads 80 - 98) |
+|                                    |
+| f = Critical Error, Restarting CPU |
+|____________________________________|
+                  
 ```
