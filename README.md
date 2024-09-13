@@ -42,6 +42,7 @@ The Error Reporter operates on reserved payload 99. Data looks like `990015e`. T
 99[0]015e - Error Level
 990[015e] - Line Number
  ____________________________________
+| ========== Error Levels ========== |
 | 0 = Information (Payloads 00 - 19) |
 | 1 = Warning     (Payloads 00 - 19) |
 | 2 = Error       (Payloads 00 - 19) |
